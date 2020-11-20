@@ -60,25 +60,27 @@ function enableSubmit() {
 }
 
 function submit() {
-    firstStep.style.display = "none";
-    secondStep.style.display = "block";
-    createTeam1();
-    createTeam2();
-    printTeam1();
-    printTeam2();
-    btnNext.style.display = "none";
+    if(namesArray.length == 10) {
+        firstStep.style.display = "none";
+        secondStep.style.display = "block";
+        createTeam1();
+        createTeam2();
+        printTeam1();
+        printTeam2();
+        removeNext();
+    }
 }
 
 function reverseSubmit() {
     firstStep.style.display = "block";
     secondStep.style.display = "none";
-    btnNext.style.display = "block";
+    addNext();
 }
 
 function next() {
     firstStep.style.display = "none";
     secondStep.style.display = "block";
-    btnNext.style.display = "none";
+    removeNext();
 }
 
 var team1 = [];
@@ -136,6 +138,14 @@ function removeName(index) {
     namesArray.splice(index, 1);
     printNames();
     updateNumber();
+}
+
+function addNext() {
+    btnNext.style.display = "block";
+}
+
+function removeNext() {
+    btnNext.style.display = "none";
 }
 
 // EXECUTION

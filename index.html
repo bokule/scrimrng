@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Bruh</title>
+        <link rel="icon" href="assets/img/favicon.ico"/>
+        <link type="text/css" rel="stylesheet" href="assets/css/style.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" crossorigin="anonymous"/>
+    </head>
+    <body>
+        <div id="main">
+            <div id="container">
+                <button id="btnNext" onClick="next();">&gt;</button>
+                <div id="firstStep">
+                    <form method="get">
+                        <input type="text" name="tbName" id="tbName" autocomplete="off"/>
+                        <input type="button" value="+" id="btnAddName"/>
+                    </form>
+                    <ul id="namesList">
+                    </ul>
+                    <button id="submitButton">&gt;</button>
+                    <span id="numberOfNames">0/10</span>
+                </div>
+                <div id="secondStep">
+                    <div id="team1">   
+                        <span>Team 1:</span>
+                        <ul id="team1List">
+                        </ul>
+                    </div>
+                    <div id="team2">
+                        <span>Team 2:</span>
+                        <ul id="team2List">
+                        </ul>
+                    </div>
+                    <button id="btnBack">&lt;</button>
+                    <button id="btnRedo" onClick="submit();"><i class="fas fa-redo"></i></button>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="assets/js/main.js"></script>
+    </body>
+</html>

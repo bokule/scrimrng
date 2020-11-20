@@ -1,0 +1,148 @@
+@font-face {
+  src: url("../fonts/VarelaRound-Regular.ttf");
+  font-family: "VarelaRound";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'VarelaRound';
+  border-radius: 5px;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#main {
+  min-height: 100vh;
+  background-color: #ab66ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0;
+}
+
+#container {
+  width: 400px;
+  background-color: #6f33b8;
+  padding: 10px;
+}
+
+#firstStep {
+  position: relative;
+}
+
+#firstStep form {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+input[type=text] {
+  border: none;
+  padding: 5px;
+  outline: none;
+  color: #000;
+}
+
+input[type=button], button {
+  border: none;
+  background-color: #ab66ff;
+  padding: 5px 10px;
+  font-weight: bold;
+  outline: none;
+  color: #000;
+  cursor: pointer;
+}
+
+#namesList {
+  min-height: 100px;
+}
+
+#namesList .btnRemove {
+  color: #ff0040;
+}
+
+li {
+  background-color: #ab66ff;
+  padding: 5px;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#submitButton {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  outline: none;
+}
+
+#numberOfNames {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+}
+
+#secondStep {
+  display: none;
+}
+
+#secondStep ul {
+  margin-top: 5px;
+}
+
+#btnBack {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #6f33b8;
+  color: #fff;
+}
+
+#btnNext {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #6f33b8;
+  color: #fff;
+  display: none;
+}
+
+#btnRedo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #6f33b8;
+  color: #fff;
+}
+
+@media screen and (max-width: 450px) {
+  #container {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

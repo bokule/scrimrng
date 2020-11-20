@@ -1,0 +1,138 @@
+$color-black: #000;
+$color-white: #fff;
+$color-grey: rgb(185, 185, 185);
+$color-purple: #6f33b8;
+$color-pink: #ab66ff;
+$color-red: #ff0040;
+
+@font-face {
+    src: url("../fonts/VarelaRound-Regular.ttf");
+    font-family: "VarelaRound";
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'VarelaRound';
+    border-radius: 5px;
+    color: $color-white;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#main {
+    min-height: 100vh;
+    background-color: $color-pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+}
+
+#container {
+    width: 400px;
+    background-color: $color-purple;
+    padding: 10px;
+}
+
+#firstStep {
+    position: relative;
+    form {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+
+input[type=text] {
+    border: none;
+    padding: 5px;
+    outline: none;
+    color: $color-black;
+}
+
+input[type=button], button {
+    border: none;
+    background-color: $color-pink;
+    padding: 5px 10px;
+    font-weight: bold;
+    outline: none;
+    color: $color-black;
+    cursor: pointer;
+}
+
+#namesList {
+    min-height: 100px;
+    .btnRemove {
+        color: $color-red;
+    }
+}
+
+li {
+    background-color: $color-pink;
+    padding: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#submitButton {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    outline: none;
+}
+
+#numberOfNames {
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+}
+
+#secondStep {
+    display: none;
+    ul {
+        margin-top: 5px;
+    }
+}
+
+#btnBack {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: $color-purple;
+    color: $color-white;
+}
+
+#btnNext {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: $color-purple;
+    color: $color-white;
+    display: none;
+}
+
+#btnRedo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: $color-purple;
+    color: $color-white;
+}
+
+@media screen and (max-width: 450px) {
+    #container {
+        width: 90%;
+    }
+}

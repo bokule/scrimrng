@@ -23,7 +23,7 @@ a {
 
 #main {
   min-height: 100vh;
-  background-color: #ab66ff;
+  background-color: #70a7ff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,7 +38,7 @@ a {
 
 #container {
   width: 400px;
-  background-color: #6f33b8;
+  background-color: #3b86ff;
   padding: 10px;
 }
 
@@ -60,16 +60,15 @@ input[type=text] {
 
 input[type=button], button {
   border: none;
-  background-color: #ab66ff;
+  background-color: #70a7ff;
   padding: 5px 10px;
   font-weight: bold;
   outline: none;
-  color: #000;
   cursor: pointer;
 }
 
 #namesList {
-  min-height: 200px;
+  min-height: 100px;
 }
 
 #namesList .btnRemove {
@@ -77,7 +76,7 @@ input[type=button], button {
 }
 
 li {
-  background-color: #ab66ff;
+  background-color: #70a7ff;
   padding: 5px;
   margin-bottom: 5px;
   display: -webkit-box;
@@ -119,7 +118,7 @@ li {
   position: absolute;
   top: 10px;
   left: 10px;
-  background-color: #6f33b8;
+  background-color: #3b86ff;
   color: #fff;
 }
 
@@ -127,7 +126,7 @@ li {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: #6f33b8;
+  background-color: #3b86ff;
   color: #fff;
   display: none;
 }
@@ -136,7 +135,7 @@ li {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: #6f33b8;
+  background-color: #3b86ff;
   color: #fff;
 }
 

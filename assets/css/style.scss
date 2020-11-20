@@ -1,8 +1,8 @@
 $color-black: #000;
 $color-white: #fff;
 $color-grey: rgb(185, 185, 185);
-$color-purple: #6f33b8;
-$color-pink: #ab66ff;
+$color-darkblue: #3b86ff;
+$color-ltblue:#70a7ff;
 $color-red: #ff0040;
 
 @font-face {
@@ -29,7 +29,7 @@ a {
 
 #main {
     min-height: 100vh;
-    background-color: $color-pink;
+    background-color: $color-ltblue;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +38,7 @@ a {
 
 #container {
     width: 400px;
-    background-color: $color-purple;
+    background-color: $color-darkblue;
     padding: 10px;
 }
 
@@ -59,23 +59,22 @@ input[type=text] {
 
 input[type=button], button {
     border: none;
-    background-color: $color-pink;
+    background-color: $color-ltblue;
     padding: 5px 10px;
     font-weight: bold;
     outline: none;
-    color: $color-black;
     cursor: pointer;
 }
 
 #namesList {
-    min-height: 200px;
+    min-height: 100px;
     .btnRemove {
         color: $color-red;
     }
 }
 
 li {
-    background-color: $color-pink;
+    background-color: $color-ltblue;
     padding: 5px;
     margin-bottom: 5px;
     display: flex;
@@ -110,7 +109,7 @@ li {
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: $color-purple;
+    background-color: $color-darkblue;
     color: $color-white;
 }
 
@@ -118,7 +117,7 @@ li {
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: $color-purple;
+    background-color: $color-darkblue;
     color: $color-white;
     display: none;
 }
@@ -127,7 +126,7 @@ li {
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: $color-purple;
+    background-color: $color-darkblue;
     color: $color-white;
 }
 

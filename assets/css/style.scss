@@ -4,6 +4,8 @@ $color-grey: rgb(185, 185, 185);
 $color-darkblue: #3b86ff;
 $color-ltblue:#70a7ff;
 $color-red: #ff0040;
+$color-pink: #f36eff;
+$color-transparent: rgba(0, 0, 0, 0);
 
 @font-face {
     src: url("../fonts/VarelaRound-Regular.ttf");
@@ -70,6 +72,7 @@ input[type=button], button {
     min-height: 100px;
     .btnRemove {
         color: $color-red;
+        background-color: $color-transparent;
     }
 }
 
@@ -80,6 +83,10 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.pinki {
+    background-color: $color-pink;
 }
 
 #submitButton {

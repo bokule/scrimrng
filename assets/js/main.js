@@ -29,6 +29,7 @@ function printNames() {
         //var liContent = document.createTextNode(namesArray[index]);
         //liTag.appendChild(liContent);
         liTag.innerHTML += `<span class="name">${namesArray[index]}</span><button class="btnRemove" id="btnRemove${index}" onClick="removeName(${index});">X</button>`;
+        customBg(namesArray[index], liTag);
         namesList.appendChild(liTag);
     }
 }
@@ -114,6 +115,7 @@ function printTeam1() {
         //var teamMemberName = document.createTextNode(`${team1[index]} - ${roles[index]}`);
         //teamMember.appendChild(teamMemberName);
         teamMember.innerHTML += `<span class="name">${team1[index]}</span><span>${roles[index]}</span>`;
+        customBg(team1[index], teamMember);
         team1List.appendChild(teamMember);
     }
 }
@@ -125,6 +127,7 @@ function printTeam2() {
         //var teamMemberName = document.createTextNode(`${team2[index]} - ${roles[index]}`);
         //teamMember.appendChild(teamMemberName);
         teamMember.innerHTML += `<span class="name">${team2[index]}</span><span>${roles[index]}</span>`;
+        customBg(team2[index], teamMember);
         team2List.appendChild(teamMember);
     }
 }
@@ -141,4 +144,12 @@ function addNext() {
 
 function removeNext() {
     btnNext.style.display = "none";
+}
+
+function customBg(name, element) {
+    var customBgNames = ["pinki"];
+    var customBgClasses = ["pinki"];
+    for(index in customBgNames) {
+        if(name.toUpperCase() == customBgNames[index].toUpperCase()) element.classList.add(customBgClasses[index]);
+    }
 }

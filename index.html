@@ -14,8 +14,8 @@
                 <button id="btnNext" onClick="next();">&gt;</button>
                 <div id="firstStep">
                     <form method="get">
-                        <input type="text" name="tbName" id="tbName" autocomplete="off" maxlength="20"/>
-                        <input type="button" value="+" id="btnAddName"/>
+                        <input type="text" name="tbName" id="tbName" autocomplete="off" maxlength="20" onKeydown="addNameOnEnter(event);"/>
+                        <input type="button" value="+" id="btnAddName" onClick="addName();"/>
                     </form>
                     <ul id="namesList">
                     </ul>
@@ -33,7 +33,7 @@
                         <ul id="team2List">
                         </ul>
                     </div>
-                    <button id="btnBack">&lt;</button>
+                    <button id="btnBack" onClick="reverseSubmit();">&lt;</button>
                     <button id="btnRedo" onClick="submit();"><i class="fas fa-redo"></i></button>
                 </div>
             </div>

@@ -1,15 +1,3 @@
-function start() {
-    btnAddName.addEventListener("click", addName);
-    tbName.addEventListener("keydown", function(event) {
-        if(event.keyCode === 13) {
-            event.preventDefault();
-            addName();
-        }
-    });
-    btnBack.addEventListener("click", reverseSubmit);
-    //document.querySelectorAll(".btnRemove").addEventListener("click", removeName);
-}
-
 var name;
 var namesArray = [];
 //var namesArray = ['a','b','c','d','e','f','g','h','i','j'];
@@ -25,6 +13,13 @@ function addName() {
     printNames();
     updateNumber();
     enableSubmit();
+}
+
+function addNameOnEnter(event) {
+    if(event.keyCode === 13) {
+        event.preventDefault();
+        addName();
+    }
 }
 
 function printNames() {
@@ -147,7 +142,3 @@ function addNext() {
 function removeNext() {
     btnNext.style.display = "none";
 }
-
-// EXECUTION
-
-start();

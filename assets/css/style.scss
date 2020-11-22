@@ -44,6 +44,8 @@ a {
     padding: 10px;
 }
 
+// FIRST STEP
+
 #firstStep {
     position: relative;
     form {
@@ -83,11 +85,21 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-size: cover;
+    background-position: center;
 }
+
+// custom classes
 
 .pinki {
     background-color: $color-pink;
 }
+
+.cofi {
+    background-image: url("../img/cofi-bg.jpg");
+}
+
+// custom classes
 
 #submitButton {
     padding-left: 20px;
@@ -104,6 +116,8 @@ li {
     bottom: 0;
     right: 5px;
 }
+
+// SECOND STEP
 
 #secondStep {
     display: none;

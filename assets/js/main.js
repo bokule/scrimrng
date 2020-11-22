@@ -2,6 +2,8 @@ var name;
 var namesArray = [];
 //var namesArray = ['a','b','c','d','e','f','g','h','i','j'];
 
+// FIRST STEP
+
 function addName() {
     if(tbName.value != "" && namesArray.length < 10) {
         name = tbName.value.toUpperCase();
@@ -79,6 +81,8 @@ function next() {
     removeNext();
 }
 
+// SECOND STEP
+
 var team1 = [];
 var team2 = [];
 var roles = ['TOP', 'JUNGLE', 'MID', 'ADC', 'SUPPORT'];
@@ -138,18 +142,22 @@ function removeName(index) {
     updateNumber();
 }
 
-function addNext() {
+function addNext() { // adds 'next' button
     btnNext.style.display = "block";
 }
 
-function removeNext() {
+function removeNext() { // removes 'next' button
     btnNext.style.display = "none";
 }
 
+// CUSTOM BACKGROUNDS
+
 function customBg(name, element) {
-    var customBgNames = ["pinki"];
-    var customBgClasses = ["pinki"];
+    var customBgNames = ["pinki", "pinky", "cofi", "kofi", "filip", "scutler"];
+    var customBgClasses = ["pinki", "pinki", "cofi", "cofi", "cofi", "cofi"];
     for(index in customBgNames) {
-        if(name.toUpperCase() == customBgNames[index].toUpperCase()) element.classList.add(customBgClasses[index]);
+        if(name.toUpperCase() == customBgNames[index].toUpperCase()) {
+            element.classList.add(customBgClasses[index]);
+        }
     }
 }
